@@ -62,9 +62,9 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Jeremy, v20231003-6)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Jeremy, v20231003-7)" // Who made the changes.
 //#define MACHINE_UUID "DEADBEEF-2023-0123-0005-DEADBEEFCAFE"
-#define MACHINE_UUID "DEADBEEF-2023-0123-0005-202310030006"
+#define MACHINE_UUID "DEADBEEF-2023-0123-0005-202310030007"
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -1853,6 +1853,8 @@
       #define FILAMENT_SWITCH_AND_MOTION
       #if ENABLED(FILAMENT_SWITCH_AND_MOTION)
         #define NUM_MOTION_SENSORS  1
+        #define FIL_MOTION1_PULLUP
+        #define FIL_MOTION1_STATE LOW
       #endif
     #endif
         
